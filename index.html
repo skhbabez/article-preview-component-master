@@ -15,59 +15,62 @@
   </head>
   <body>
     <main>
-      <article>
-        <header>
-          <img src="images/drawers.jpg" alt="" />
-        </header>
+      <article class="card">
+        <img src="images/drawers.jpg" alt="" />
         <div>
-          <h1>
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h1>
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-        </div>
-        <footer>
-          <div>
-            <img src="images/avatar-michelle.jpg" alt="" />
-            <div>
-              <p>Michelle Appleton</p>
-              <p>28 Jun 2020</p>
+          <div class="card-body">
+            <h1>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <footer>
+            <div class="profile">
+              <img src="images/avatar-michelle.jpg" alt="" />
+              <div>
+                <p>Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+              </div>
             </div>
-          </div>
-
-          <button
-            aria-haspopup="true"
-            aria-controls="share-toast"
-            aria-label="Share"
-            type="button"
-          >
-            <img src="images/icon-share.svg" alt="" />
-          </button>
-          <div id="share-toast" aria-live="polite">
-            <p>Share</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="images/icon-facebook.svg" alt="Share on Facebook"
-                /></a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="images/icon-twitter.svg" alt="Share on Twitter"
-                /></a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="images/icon-pinterest.svg" alt="Share on Pinterest"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </footer>
+            <button
+              class="share-btn"
+              aria-haspopup="true"
+              aria-controls="share-toast"
+              aria-label="Share Article"
+              type="button"
+              id="share-button"
+            >
+              <img src="images/icon-share.svg" alt="" />
+            </button>
+            <div class="share-links" id="share-toast" aria-live="polite">
+              <p>Share</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/icon-facebook.svg" alt="Share on Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon-twitter.svg" alt="Share on Twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon-pinterest.svg"
+                      alt="Share on Pinterest"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
       </article>
     </main>
   </body>
