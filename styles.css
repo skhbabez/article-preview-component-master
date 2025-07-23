@@ -113,7 +113,6 @@ h1 + * {
 
 .share-links {
   background-color: var(--grey-900);
-  visibility: hidden;
   width: 100%;
   display: flex;
   align-items: center;
@@ -131,10 +130,8 @@ h1 + * {
   color: var(--grey-400);
 }
 
-.share-links-active {
-  visibility: visible;
-  --share-btn-bg-color: var(--grey-500);
-  --share-btn-color: brightness(0) invert(1);
+.hidden {
+  display: none;
 }
 
 .share-btn {
@@ -144,6 +141,11 @@ h1 + * {
   background-color: var(--share-btn-bg-color, var(--grey-200));
   border: none;
   z-index: 1;
+}
+
+.share-btn-dark {
+  --share-btn-bg-color: var(--grey-500);
+  --share-btn-color: brightness(0) invert(1);
 }
 
 .share-btn img {
