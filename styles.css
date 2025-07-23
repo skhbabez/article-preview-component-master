@@ -75,7 +75,8 @@ h1 + * {
   border-radius: 10px;
   max-width: 327px;
   background-color: white;
-  overflow: hidden;
+  box-shadow: 0 40px 40px -10px #c9d5e1;
+  position: relative;
 }
 
 .card header + * {
@@ -83,7 +84,9 @@ h1 + * {
 }
 
 .card header {
+  overflow: hidden;
   height: 12.5rem;
+  border-radius: 10px 10px 0px 0px;
 }
 .card header img {
   width: 100%;
@@ -99,6 +102,7 @@ h1 + * {
 .card footer {
   display: flex;
   justify-content: space-between;
+  align-items: start;
   margin-block-start: var(--static-48);
 }
 
@@ -108,7 +112,29 @@ h1 + * {
 }
 
 .share-links {
-  display: none;
+  background-color: var(--grey-900);
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 16px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.share-links p {
+  text-transform: uppercase;
+  letter-spacing: 0.25ch;
+  margin-inline-end: 0.5rem;
+  color: var(--grey-400);
+}
+
+.share-links-active {
+  visibility: visible;
+  --share-btn-bg-color: var(--grey-500);
+  --share-btn-color: brightness(0) invert(1);
 }
 
 .share-btn {
@@ -117,16 +143,12 @@ h1 + * {
   width: 2rem;
   background-color: var(--share-btn-bg-color, var(--grey-200));
   border: none;
+  z-index: 1;
 }
 
 .share-btn img {
   filter: var(--share-btn-color, unset);
   margin: auto;
-}
-
-.share-btn-active {
-  --share-btn-bg-color: var(--grey-500);
-  --share-btn-color: brightness(0) invert(1);
 }
 
 .profile {
@@ -159,6 +181,7 @@ h1 + * {
 
   .card header {
     height: auto;
+    border-radius: 10px 0px 0px 10px;
   }
 
   .wrapper {
@@ -167,5 +190,25 @@ h1 + * {
 
   .card footer {
     margin-block-start: var(--static-24);
+    align-items: center;
+  }
+
+  .share-links {
+    inline-size: 248px;
+    block-size: 55px;
+    border-radius: 10px;
+    justify-content: center;
+    right: -75px;
+    bottom: 90px;
+    z-index: 2;
+  }
+  .share-links:before {
+    content: "";
+    position: absolute;
+    block-size: 17px;
+    inline-size: 17px;
+    background-color: var(--grey-900);
+    top: 55px;
+    transform: rotateZ(45deg);
   }
 }
