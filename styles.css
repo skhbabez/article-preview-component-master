@@ -40,6 +40,7 @@ img {
   --space-5: 3rem;
   --fluid-608-730: clamp(38rem, 29.2857rem + 18.1548vw, 45.625rem);
   --fluid-0-8: clamp(0rem, -0.5714rem + 1.1905vw, 0.5rem);
+  --fluid-32-40: clamp(2rem, 1.4286rem + 1.1905vw, 2.5rem);
 }
 
 body {
@@ -208,6 +209,7 @@ h1 + * {
 
   .wrapper {
     padding-block-end: var(--space-3);
+    padding-inline: var(--fluid-32-40);
   }
 
   .card footer {
