@@ -233,8 +233,10 @@ h1 + * {
     top: 3.4375rem;
     transform: rotateZ(45deg);
   }
+}
+
+@media (min-width: 64em) {
   .card header img {
     object-position: 0% center;
-    object-fit: cover;
   }
 }
