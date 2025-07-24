@@ -51,11 +51,19 @@ Users should be able to:
 
 ### What I learned
 
+I learned how to position images with object-position. I am proud of how I Usind absolute Positioning and z-index to create the toast, while having the button still appear. The most interesting piece of code to me though, was inverting the color of the share button svg.
+
+```css
+.share-btn-dark {
+  --share-btn-color: brightness(0) invert(1); /*used with filter*/
+}
+```
+
 ### Continued development
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I want to focus more on Best practices, especially when it comes to responsoveness and accessibilty. This project forced me to dive a little into aria declarations and showed me I have a lot to still learn in this area.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Trick to color invert an svg](https://stackoverflow.com/questions/24224112/css-filter-make-color-image-with-transparency-white) - Really ehlpful and ingenious.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
