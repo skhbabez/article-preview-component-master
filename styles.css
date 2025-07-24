@@ -233,4 +233,8 @@ h1 + * {
     top: 3.4375rem;
     transform: rotateZ(45deg);
   }
+  .card header img {
+    object-position: 0% center;
+    object-fit: cover;
+  }
 }
