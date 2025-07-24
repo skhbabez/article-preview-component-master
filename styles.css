@@ -32,9 +32,12 @@ img {
   --weight-bold: 700;
   --font-step-1: 0.8125rem;
   --font-step-2: 1.25rem;
-  --static-24: 1.5rem;
-  --static-48: 3rem;
-  --static-32: 2rem;
+  --space-0: 0.5rem;
+  --space-1: 1rem;
+  --space-2: 1.5rem;
+  --space-3: 2rem;
+  --space-4: 2.5rem;
+  --space-5: 3rem;
   --fluid-608-730: clamp(38rem, 29.2857rem + 18.1548vw, 45.625rem);
   --fluid-0-8: clamp(0rem, -0.5714rem + 1.1905vw, 0.5rem);
 }
@@ -68,19 +71,19 @@ p {
 }
 
 h1 + * {
-  margin-block-start: var(--static-24);
+  margin-block-start: var(--space-2);
 }
 
 .card {
   border-radius: 10px;
-  max-width: 327px;
+  max-width: 20.4375rem;
   background-color: white;
   box-shadow: 0 40px 40px -10px #c9d5e1;
   position: relative;
 }
 
 .card header + * {
-  margin-block-start: var(--static-32);
+  margin-block-start: var(--space-3);
 }
 
 .card header {
@@ -103,11 +106,11 @@ h1 + * {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-block-start: var(--static-48);
+  margin-block-start: var(--space-5);
 }
 
 .wrapper {
-  padding-inline: var(--static-32);
+  padding-inline: var(--space-3);
   padding-block-end: 1.125rem;
 }
 
@@ -116,8 +119,8 @@ h1 + * {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 32px 16px;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-1);
   position: absolute;
   bottom: 0;
   border-radius: 0px 0px 10px 10px;
@@ -126,7 +129,7 @@ h1 + * {
 .share-links p {
   text-transform: uppercase;
   letter-spacing: 0.25ch;
-  margin-inline-end: 0.5rem;
+  margin-inline-end: var(--space-0);
   color: var(--grey-400);
 }
 
@@ -136,8 +139,8 @@ h1 + * {
 
 .share-btn {
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: var(--space-3);
+  width: var(--space-3);
   background-color: var(--share-btn-bg-color, var(--grey-200));
   border: none;
   z-index: 1;
@@ -156,12 +159,12 @@ h1 + * {
 .profile {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-1);
 }
 
 .profile img {
   border-radius: 100%;
-  height: 2.5rem;
+  height: var(--space-4);
 }
 
 .profile p:first-of-type {
@@ -172,7 +175,7 @@ h1 + * {
   color: var(--grey-400);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .card {
     display: grid;
     grid-template-columns: 38% 1fr;
@@ -187,30 +190,30 @@ h1 + * {
   }
 
   .wrapper {
-    padding-block-end: var(--static-32);
+    padding-block-end: var(--space-3);
   }
 
   .card footer {
-    margin-block-start: var(--static-24);
+    margin-block-start: var(--space-2);
     align-items: center;
   }
 
   .share-links {
-    inline-size: 248px;
-    block-size: 55px;
+    inline-size: 15.5rem;
+    block-size: 3.4375rem;
     border-radius: 10px;
     justify-content: center;
-    right: -75px;
-    bottom: 90px;
+    right: -4.6875rem;
+    bottom: 5.625rem;
     z-index: 2;
   }
   .share-links:before {
     content: "";
     position: absolute;
-    block-size: 17px;
-    inline-size: 17px;
+    block-size: 1.0625rem;
+    inline-size: 1.0625rem;
     background-color: var(--grey-900);
-    top: 55px;
+    top: 3.4375rem;
     transform: rotateZ(45deg);
   }
 }
